@@ -9,3 +9,5 @@ Its a To-Do app that works as a Web App as well as Android App
 # Useful links and libraries
 
 1. [Bootstrap Material Design](https://atmospherejs.com/fezvrasta/bootstrap-material-design)
+2. [Meteor and Fam.ous tutorial](http://www.tutas-labs.com/famous-and-meteor-integration-course-overview/)
+3. [Meteor and Security](https://www.discovermeteor.com/blog/meteor-and-security/)
