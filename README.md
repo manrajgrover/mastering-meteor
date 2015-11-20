@@ -5,14 +5,16 @@ Here I'll add all my mini projects and links I develop and find useful while lea
 
 1. [Meteor](http://docs.meteor.com/#/basic/)
 2. [Famous](http://famous.org/docs/)
+3. [Polymer](https://www.polymer-project.org/1.0/)
 
 # Tutorials
 
 1. [First tutorial - Meteortips](http://meteortips.com/first-meteor-tutorial/)
 2. [Second tutorial - Meteortips](http://meteortips.com/second-meteor-tutorial/)
-3. [Meteor and Fam.ous tutorial](http://www.tutas-labs.com/famous-and-meteor-integration-course-overview/)
-4. [Meteor and Security](https://www.discovermeteor.com/blog/meteor-and-security/)
-5. [Quora answer on Security](https://www.quora.com/Is-meteor-js-secure)
+3. [Meteor and Fam.ous tutorial - tutas-labs](http://www.tutas-labs.com/famous-and-meteor-integration-course-overview/)
+4. [Meteor and Security - Discover Meteor](https://www.discovermeteor.com/blog/meteor-and-security/)
+5. [Quora answer on Security - Quora](https://www.quora.com/Is-meteor-js-secure)
+6. [Good tutorial on basics in Meteor](https://www.codetutorial.io/tutorial/meteor/)
 
 # Libraries and Recommendations
 
