@@ -6,6 +6,7 @@ PageView = function() {
     _createHeader.call(this);
     _createBody.call(this);
     _setListeners.call(this);
+    _createBacking.call(this);
 }
 
 PageView.prototype = Object.create(famous.core.View.prototype);
@@ -14,8 +15,6 @@ PageView.prototype.constructor = PageView;
 PageView.DEFAULT_OPTIONS = {
     headerSize: 44
 };
-
-
 
 function _createBody() {
     this.bodySurface = new famous.surfaces.ImageSurface({
@@ -67,6 +66,18 @@ function _createHeader() {
     this.layout.header.add(hamburgerModifier).add(this.hamburgerSurface);
     this.layout.header.add(searchModifier).add(searchSurface);
     this.layout.header.add(iconModifier).add(iconSurface);
+}
+
+
+function _createBacking() {
+    var backing = new famous.core.Surface({
+        properties: {
+            backgroundColor: 'black',
+            boxShadow: '0 0 20px rgba(0,0,0,0.5)'
+        }
+    });
+
+    this.add(backing);
 }
 
 function _setListeners() {
