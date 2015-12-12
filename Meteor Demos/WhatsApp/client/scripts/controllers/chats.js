@@ -5,6 +5,6 @@ function ChatsCtrl($scope) {
     $scope.remove = remove;
 
     function remove(chat) {
-        $scope.chats.remove(chat);
+        $scope.data.remove(chat);
     }
 }

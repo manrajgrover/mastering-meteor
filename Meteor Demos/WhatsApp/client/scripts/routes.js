@@ -4,7 +4,12 @@ function config($stateProvider, $urlRouterProvider) {
     $stateProvider.state('tab', {
         url: '/tab',
         abstract: true,
-        templateUrl: 'client/templates/tabs.html'
+        templateUrl: 'client/templates/tabs.html',
+        resolve: {
+            user() {
+                return Meteor.user();
+            }
+        }
     }).state('tab.chats', {
         url: '/chats',
         views: {
@@ -19,6 +24,23 @@ function config($stateProvider, $urlRouterProvider) {
             'tab-chats': {
                 templateUrl: 'client/templates/chat-detail.html',
                 controller: 'ChatDetailCtrl'
+            }
+        }
+    }).state('login', {
+        url: '/login',
+        templateUrl: 'client/templates/login.html',
+        controller: 'LoginCtrl as logger'
+    }).state('confirmation', {
+        url: '/confirmation/:phone',
+        templateUrl: 'client/templates/confirmation.html',
+        controller: 'ConfirmationCtrl as confirmation'
+    }).state('profile', {
+        url: '/profile',
+        templateUrl: 'client/templates/profile.html',
+        controller: 'ProfileCtrl as profile',
+        resolve: {
+            user() {
+                return Meteor.user();
             }
         }
     });
