@@ -4,8 +4,9 @@ Here I'll add all my mini projects and links I develop and find useful while lea
 # Documentations
 
 1. [Meteor](http://docs.meteor.com/#/basic/)
-2. [Famous](http://famous.org/docs/)
+2. [Famous](http://famous.org/docs/) [- Repository is now deprecated](https://github.com/Famous/engine/issues/506)
 3. [Polymer](https://www.polymer-project.org/1.0/)
+4. [Materialize](http://materializecss.com/)
 
 # Tutorials
 
@@ -15,6 +16,7 @@ Here I'll add all my mini projects and links I develop and find useful while lea
 4. [Meteor and Security - Discover Meteor](https://www.discovermeteor.com/blog/meteor-and-security/)
 5. [Quora answer on Security - Quora](https://www.quora.com/Is-meteor-js-secure)
 6. [Good tutorial on basics in Meteor](https://www.codetutorial.io/tutorial/meteor/)
+7. [Slack clone using MeteorJS](https://scotch.io/tutorials/building-a-slack-clone-in-meteor-js-getting-started)
 
 # Libraries and Recommendations
 
@@ -25,10 +27,20 @@ Here I'll add all my mini projects and links I develop and find useful while lea
 
 # Video Tutorials and Workshops
 
-1. [Gadi Cohen: Meteor Famous Views -- Devshop London June 2015](https://www.youtube.com/watch?v=zR63GD9aeKw)
-2. [Meteor + Famo.us: Made for each other -- February Devshop SF](https://www.youtube.com/watch?v=bmd-cXSGQAA)
+1. [Meteor tutorial](https://www.youtube.com/watch?v=hgjyr6BPAtA&list=PLLnpHn493BHECNl9I8gwos-hEfFrer7TV)
+2. [Intermediate Meteor](https://www.youtube.com/playlist?list=PLLnpHn493BHFYZUSK62aVycgcAouqBt7V)
+3. [Differential: Meteor + Polymer -- December Devshop SF](https://www.youtube.com/watch?v=DsATeVvMIm4)
+4. [Michael Karliner: Meteor and the Internet of Things -- Devshop London Jan 2015](https://www.youtube.com/watch?v=MdeaFLrvqtc)
+5. [Scaling Codefights from 0 to 200k users - Tigran Sloyan](https://www.youtube.com/watch?v=cpVOHzQcrbI)
+6. [Gadi Cohen: Meteor Famous Views -- Devshop London June 2015](https://www.youtube.com/watch?v=zR63GD9aeKw)
+7. [Meteor + Famo.us: Made for each other -- February Devshop SF](https://www.youtube.com/watch?v=bmd-cXSGQAA)
 
-# Projects
+# Project Demos
 
 ## Simple To-Do App
 Its a To-Do app that works as a Web App as well as Android App
+
+# About Meteor
+
+1. [Twitter](https://twitter.com/meteorjs)
+2. [Website](https://www.meteor.com/)
