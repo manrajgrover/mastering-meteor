@@ -1,0 +1,78 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../core-signals/core-signals.html">
+
+
+<polymer-element name="di-form" on-keypress="{{keypressHandler}}">
+  <template>
+    <form>
+      <content></content>
+    </form>
+    <core-signals on-core-signal-submit="{{submitHandler}}"></core-signals>
+  </template>
+
+  <script>
+    Polymer({
+      publish: {
+        valid: false
+      },
+
+      domReady: function() {
+        var decorators = this.getDecorators();
+
+        [].forEach.call(decorators, function(decorator, i) {
+          var input = decorator.querySelector('input, textarea');
+          input.addEventListener('change', function(ev) {
+            var isValid = this.validity.valid;
+            decorator.isInvalid = !isValid;
+          });
+        });
+
+      },
+
+      submit: function() {
+        var _this = this;
+
+        // Get all paper inputs within this di-form
+        var inputs = this.getDecorators();
+
+        // Set di-form's valid state
+        _this.valid = true;
+        [].forEach.call(inputs, function(decorator, i) {
+          var isValid = decorator.querySelector('input, textarea').validity.valid;
+          decorator.isInvalid = !isValid;
+          if (!isValid) {
+            _this.valid = false;
+          }
+        });
+
+        // Fire the submit event
+        this.fire('submit', this);
+      },
+
+      keypressHandler: function(e) {
+        if (e.which === 13){
+          // Set validity before firing submit event
+          this.submit();
+        }
+      },
+
+      submitHandler: function(e, detail, sender) {
+        if (detail === this.querySelector('[type=submit]')) {
+          e.stopPropagation();
+          this.submit();
+        }
+      },
+
+      getDecorators: function() {
+        return this.querySelectorAll('paper-input-decorator');
+      },
+
+      reset: function() {
+        var inputs = this.getDecorators();
+        [].forEach.call(inputs, function(decorator, i) {
+          decorator.querySelector('input, textarea').value = '';
+        });
+      }
+    });
+  </script>
+</polymer-element>

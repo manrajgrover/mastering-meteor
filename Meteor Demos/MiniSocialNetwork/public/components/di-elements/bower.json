@@ -1,0 +1,12 @@
+{
+  "name": "di-elements",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#master",
+    "di-form": "DifferentialWebComponents/di-form#master",
+    "di-button": "DifferentialWebComponents/di-button#master",
+    "di-layout": "DifferentialWebComponents/di-layout#master",
+    "di-icons": "DifferentialWebComponents/di-icons#master"
+  }
+}

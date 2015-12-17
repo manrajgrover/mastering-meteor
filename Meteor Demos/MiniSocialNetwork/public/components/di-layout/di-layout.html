@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../core-media-query/core-media-query.html">
+
+
+<polymer-element name="di-layout" attributes="responsiveWidth">
+  <template>
+    <core-media-query query="max-width:{{responsiveWidth}}px" queryMatches={{matches}}>
+    </core-media-query>
+    <div layout vertical?="{{matches}}" horizontal?="{{!matches}}">
+      <content></content>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      domReady: function() {
+        var flexors = this.querySelectorAll('di-layout > [flex]');
+
+        var mediaQuery = this.shadowRoot.querySelector('core-media-query');
+        mediaQuery.addEventListener('core-media-change', function(ev) {
+          if (ev.detail.matches) {
+            [].forEach.call(flexors, function(flexor) {
+              flexor.removeAttribute('flex');
+            });
+          } else {
+            [].forEach.call(flexors, function(flexor) {
+              flexor.setAttribute('flex', '');
+            });
+          }
+        });
+      }
+    });
+  </script>
+</polymer-element>

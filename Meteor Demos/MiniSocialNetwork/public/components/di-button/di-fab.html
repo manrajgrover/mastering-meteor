@@ -1,0 +1,16 @@
+<!-- It seems polymer api is changing soon, so this is just
+a copy of di-button for now, extending paper-fab -->
+
+<link rel="import" href="../polymer/polymer.html">
+
+<polymer-element name="di-fab" extends="paper-fab" attributes="type" on-click="{{clickHandler}}">
+  <script>
+    Polymer({
+      clickHandler: function(){
+        if (this.type === 'submit'){
+          this.fire('core-signal', {name: 'submit', data: this});
+        }
+      }
+    });
+  </script>
+</polymer-element>

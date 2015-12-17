@@ -1,0 +1,13 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<polymer-element name="di-button" extends="paper-button" attributes="type" on-click="{{clickHandler}}">
+  <script>
+    Polymer({
+      clickHandler: function(){
+        if (this.type === 'submit'){
+          this.fire('core-signal', {name: 'submit', data: this});
+        }
+      }
+    });
+  </script>
+</polymer-element>
