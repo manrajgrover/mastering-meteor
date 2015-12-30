@@ -1,5 +1,6 @@
 # Mastering Meteor
 Here I'll add all my mini projects and links I develop and find useful while learning Meteor.
+This repository also includes [boilerplate](https://github.com/ManrajGrover/Mastering-Meteor/tree/master/BoilerPlate) for MeteorJS.
 
 # Documentations
 
@@ -7,6 +8,10 @@ Here I'll add all my mini projects and links I develop and find useful while lea
 2. [Famous](http://famous.org/docs/) [- Repository is now deprecated](https://github.com/Famous/engine/issues/506)
 3. [Polymer](https://www.polymer-project.org/1.0/)
 4. [Materialize](http://materializecss.com/)
+
+# Package Manager
+
+1. [AtmosphereJS](https://atmospherejs.com)
 
 # Tutorials
 
