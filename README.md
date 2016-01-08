@@ -1,6 +1,6 @@
-# Mastering Meteor
-Here I'll add all my mini projects and links I develop and find useful while learning Meteor.
-This repository also includes [boilerplate](https://github.com/ManrajGrover/Mastering-Meteor/tree/master/BoilerPlate) for MeteorJS.
+# Awesome Meteor
+A curated, community driven list of delightful Meteor packages and resources.
+This repository also includes [boilerplate](https://github.com/ManrajGrover/awesome-meteor/tree/master/BoilerPlate) for MeteorJS.
 
 # Documentations
 
