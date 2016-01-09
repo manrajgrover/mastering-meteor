@@ -1,5 +1,5 @@
-# Awesome Meteor
-A curated, community driven list of delightful Meteor packages and resources.
+# Mastering Meteor
+A curated list of delightful Meteor packages and resources.
 This repository also includes [boilerplate](https://github.com/ManrajGrover/awesome-meteor/tree/master/BoilerPlate) for MeteorJS.
 
 # Documentations
@@ -39,11 +39,6 @@ This repository also includes [boilerplate](https://github.com/ManrajGrover/awes
 5. [Scaling Codefights from 0 to 200k users - Tigran Sloyan](https://www.youtube.com/watch?v=cpVOHzQcrbI)
 6. [Gadi Cohen: Meteor Famous Views -- Devshop London June 2015](https://www.youtube.com/watch?v=zR63GD9aeKw)
 7. [Meteor + Famo.us: Made for each other -- February Devshop SF](https://www.youtube.com/watch?v=bmd-cXSGQAA)
-
-# Project Demos
-
-## Simple To-Do App
-Its a To-Do app that works as a Web App as well as Android App
 
 # About Meteor
 
